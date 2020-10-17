@@ -1,0 +1,68 @@
+body {
+  @extend .body-text;
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.5;
+  background-color: $c-white;
+  color: $c-dark;
+  font-weight: 400;
+  position: relative;
+}
+
+.body-text {
+  font-size: 3.733333333333334vw;
+
+  @media (orientation: landscape) {
+    font-size: 3.733333333333334vh;
+  }
+}
+
+.small-text {
+  font-size: 3.2vw;
+
+  @media (orientation: landscape) {
+    font-size: 3.2vh;
+  }
+}
+
+.big-text {
+  font-size: 4.266666666666667vw;
+
+  @media (orientation: landscape) {
+    font-size: 4.266666666666667vh;
+  }
+}
+
+.app {
+  width: 100%;
+  overflow-x: hidden;
+  padding: 4vw 4vw 17.333333333333336vw 4vw;
+
+  @media (orientation: landscape) {
+    padding: 4vh 4vh 17.333333333333336vh 4vh;
+  }
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.btn {
+  @include no-spacing;
+  display: inline-block;
+  border: 0;
+  text-decoration: none;
+  border-radius: 1.3333333333333335vw;
+  color: $c-white;
+  background-color: #00918C;
+  padding: 1.2vw 4vw;
+
+  @media (orientation: landscape) {
+    border-radius: 1.3333333333333335vh;
+    padding: 1.2vh 4vh;
+  }
+
+  &.btn-orange {
+    background-color: #FF763B;
+  }
+}
